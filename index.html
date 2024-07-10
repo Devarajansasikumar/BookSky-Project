@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>BookSky</h1>
+    </nav>
+
+    <div class="container">
+        <div class="bookContainer">
+            <h2>Wings of Fire</h2>
+            <h4>APJ Abdul Kalam</h4>
+            <p>Wings of Fire (1999), is the autobiography of the Missile Man of India and the former President of India, Dr. A. P. J. Abdul Kalam. It was written by him and Arun Tiwari.In the autobiography, Kalam examines his early life, effort, hardship, fortitude, luck and chance that eventually led him to lead Indian space research, nuclear and missile programs.</p>
+            <button onclick="bookDelete(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popupOverlay"></div>
+    <div class="popupBox">
+        <h1>Add Book</h1>
+            <form>
+                <input type="text" placeholder="Book Title" id="bookTitleInput">
+                <input type="text" placeholder="Book Author" id="bookAuthorInput">
+                <textarea placeholder="Book Description" id="bookDescInput"></textarea>
+                <button id="addBook">ADD</button>
+                <button id="cancelPopup">CANCEL</button>
+            </form>
+    </div>
+
+    <button class="addButton" id="addPopupShow">+</button>
+
+
+    <script src="script.js" />
+</body>
+</html>
